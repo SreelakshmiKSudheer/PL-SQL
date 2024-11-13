@@ -3,6 +3,7 @@ SET SERVEROUTPUT ON;
 DECLARE
     an NUMBER := &an;
     bn NUMBER := &bn;
+    -- cn constant number := 5;     constant declaration
 BEGIN
     dbms_output.put_line('Sum = ' || (an + bn));
 END;
