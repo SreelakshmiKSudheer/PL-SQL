@@ -7,3 +7,5 @@ BEGIN
     dbms_output.put_line('Sum = ' || (an + bn));
 END;
 /
+
+-- if floating point values appear, specify it in parathesis to number()
