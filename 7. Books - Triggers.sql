@@ -20,7 +20,6 @@ CREATE table book(
 
 create or replace trigger onModify
 after insert or update or delete on book
-for each ROW
 declare 
     counter int;
 BEGIN
