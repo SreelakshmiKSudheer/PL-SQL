@@ -8,11 +8,19 @@ DECLARE
 names varchar(20);
 
 BEGIN
-select name into names from employee where id = 1;
-DBMS_OUTPUT.PUT_LINE(names);
+    -- insert statement
+    insert into employee values(3,'Sasuke');
+    insert into employee values(3,'Sakura') ;
+    
+    -- update statement
+    update employee set id = 4 where name = 'Sakura';
+
+    select name into names from employee where id = 1;
+    DBMS_OUTPUT.PUT_LINE(names);
 end;
 /
 
+select * from employee;
 drop table employee;
--- @ "C:\Users\user\OneDrive\Documents\Courses\PL SQL\4. select.sql"
+-- @ "C:\Users\user\OneDrive\Documents\Courses\PL SQL\5. DML.sql"
 
